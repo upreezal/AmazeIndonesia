@@ -1,0 +1,6 @@
+{
+  "name": "AMAZE INDONESIA",
+  "description": "Premium modest fashion landing page for elegant gamis, abayas, and jubahs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
