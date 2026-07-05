@@ -30,11 +30,11 @@ export default function Hero({ onNavigate }: HeroProps) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="inline-flex items-center space-x-2 border border-gold/40 bg-gold/10 px-4 py-1.5 rounded-full mb-6 backdrop-blur-sm"
+            className="inline-flex items-center space-x-2 border border-gold/30 bg-gold/5 px-4 py-1.5 rounded-none mb-6 backdrop-blur-xs"
           >
-            <span className="w-2 h-2 rounded-full bg-gold animate-pulse" />
-            <span className="text-xs font-sans font-medium tracking-[0.2em] uppercase text-gold-light">
-              AMAZE INDONESIA • NEW COLLECTION
+            <span className="w-1.5 h-1.5 bg-gold rounded-full" />
+            <span className="text-xs font-mono tracking-widest uppercase text-gold">
+              NEW SEASON • 2026
             </span>
           </motion.div>
 
@@ -43,7 +43,7 @@ export default function Hero({ onNavigate }: HeroProps) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-4xl sm:text-5xl lg:text-7xl font-serif font-semibold tracking-tight leading-tight text-white mb-6"
+            className="text-4xl sm:text-5xl lg:text-7xl font-serif font-semibold tracking-tight leading-tight text-[#F4F4F4] mb-6"
           >
             Elevate Your <br className="hidden sm:inline" />
             <span className="text-gold italic font-normal">Modest</span> Style
@@ -54,7 +54,7 @@ export default function Hero({ onNavigate }: HeroProps) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-base sm:text-lg text-beige-light/85 mb-10 leading-relaxed font-sans font-light max-w-xl"
+            className="text-base sm:text-lg text-white/80 mb-10 leading-relaxed font-sans font-light max-w-xl"
           >
             Premium Gamis & Jubah dengan bahan terbaik pilihan. Dirancang khusus untuk memberikan keanggunan, kenyamanan, dan rasa percaya diri di setiap momen spesial Anda.
           </motion.p>
@@ -68,7 +68,7 @@ export default function Hero({ onNavigate }: HeroProps) {
           >
             <button
               onClick={() => onNavigate('koleksi')}
-              className="px-8 py-4 bg-gold hover:bg-gold-dark text-navy-dark font-sans font-semibold text-sm uppercase tracking-wider rounded-none shadow-xl transition-all duration-300 hover:shadow-gold/20 hover:-translate-y-0.5 cursor-pointer flex items-center justify-center space-x-2 group"
+              className="px-8 py-4 bg-gold hover:bg-gold-dark text-black font-mono text-xs uppercase tracking-widest rounded-none shadow-xl transition-all duration-300 hover:shadow-gold/20 hover:-translate-y-0.5 cursor-pointer flex items-center justify-center space-x-2 group"
             >
               <span>Lihat Koleksi</span>
               <ChevronRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -76,7 +76,7 @@ export default function Hero({ onNavigate }: HeroProps) {
 
             <button
               onClick={() => onNavigate('checkout')}
-              className="px-8 py-4 bg-transparent hover:bg-white/10 text-white border border-white/30 hover:border-gold font-sans font-semibold text-sm uppercase tracking-wider rounded-none transition-all duration-300 cursor-pointer flex items-center justify-center space-x-2"
+              className="px-8 py-4 bg-transparent hover:bg-white/10 text-white border border-white/20 hover:border-gold font-mono text-xs uppercase tracking-widest rounded-none transition-all duration-300 cursor-pointer flex items-center justify-center space-x-2"
             >
               <Phone className="w-4 h-4 text-gold" />
               <span>Pesan via WhatsApp</span>

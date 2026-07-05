@@ -35,14 +35,14 @@ export default function CaraPesan() {
         
         {/* Title */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-xs font-sans tracking-[0.25em] text-gold uppercase font-semibold">
+          <span className="text-xs font-mono tracking-[0.25em] text-gold uppercase font-semibold">
             SIMPLE & FAST ORDER PROCESS
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-navy-dark mt-2 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-ink mt-2 tracking-tight">
             Bagaimana Cara Memesan?
           </h2>
           <div className="h-1 w-20 bg-gold mx-auto mt-4" />
-          <p className="font-sans text-sm text-navy-dark/65 mt-5 font-light">
+          <p className="font-sans text-sm text-ink/70 mt-5 font-light">
             Ikuti 4 langkah mudah berikut ini untuk melakukan pemesanan busana modest premium di AMAZE INDONESIA.
           </p>
         </div>
@@ -52,10 +52,10 @@ export default function CaraPesan() {
           {steps.map((step, idx) => (
             <div
               key={idx}
-              className="bg-white border border-beige-dark/50 p-8 flex flex-col justify-between hover:shadow-lg transition-all duration-300 relative group"
+              className="bg-panel border border-beige-dark/40 p-8 flex flex-col justify-between hover:shadow-lg transition-all duration-300 relative group"
             >
               {/* Number indicator */}
-              <span className="absolute top-6 right-6 font-serif text-3xl font-bold text-beige-dark/40 group-hover:text-gold/20 transition-colors duration-300">
+              <span className="absolute top-6 right-6 font-serif text-3xl font-bold text-ink/10 group-hover:text-gold/20 transition-colors duration-300">
                 {step.num}
               </span>
 
@@ -66,10 +66,10 @@ export default function CaraPesan() {
 
               {/* Step info */}
               <div>
-                <h3 className="font-serif text-base font-bold text-navy-dark tracking-wide mb-3">
+                <h3 className="font-serif text-base font-bold text-ink tracking-wide mb-3 font-medium">
                   {step.title}
                 </h3>
-                <p className="font-sans text-xs text-navy-dark/75 leading-relaxed font-light">
+                <p className="font-sans text-xs text-ink/75 leading-relaxed font-light">
                   {step.description}
                 </p>
               </div>

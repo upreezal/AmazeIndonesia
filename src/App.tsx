@@ -85,7 +85,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-beige-light font-sans text-navy-dark select-none selection:bg-gold/35 selection:text-navy-dark">
+    <div className="min-h-screen bg-beige-light font-sans text-ink select-none selection:bg-gold/35 selection:text-[#111111]">
       {/* Floating Header */}
       <Navbar
         cart={cart}

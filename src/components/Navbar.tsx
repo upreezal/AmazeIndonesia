@@ -54,11 +54,11 @@ export default function Navbar({ cart, onCartClick, onNavigate, activeSection }:
             className="flex flex-col cursor-pointer group"
             onClick={() => handleLinkClick('home')}
           >
-            <span className="font-serif text-2xl sm:text-3xl font-bold tracking-widest text-navy-dark group-hover:text-gold transition-colors duration-300">
-              AMAZE
+            <span className="font-serif text-2xl sm:text-3xl font-bold tracking-widest text-ink group-hover:text-gold transition-colors duration-300">
+              AMAZE.ID
             </span>
-            <span className="text-[9px] font-sans tracking-[0.25em] text-gold uppercase font-medium -mt-1 ml-0.5">
-              INDONESIA
+            <span className="text-[9px] font-mono tracking-[0.25em] text-gold uppercase font-medium -mt-1 ml-0.5">
+              PREMIUM MODEST
             </span>
           </div>
 
@@ -68,10 +68,10 @@ export default function Navbar({ cart, onCartClick, onNavigate, activeSection }:
               <button
                 key={link.id}
                 onClick={() => handleLinkClick(link.id)}
-                className={`font-sans text-sm tracking-wider uppercase transition-all duration-300 hover:text-gold relative py-1 cursor-pointer ${
+                className={`font-mono text-xs tracking-widest uppercase transition-all duration-300 hover:text-gold relative py-1 cursor-pointer ${
                   activeSection === link.id
                     ? 'text-gold font-medium'
-                    : 'text-navy-dark/80'
+                    : 'text-ink/80'
                 }`}
               >
                 {link.label}
@@ -87,7 +87,7 @@ export default function Navbar({ cart, onCartClick, onNavigate, activeSection }:
             {/* Cart Button */}
             <button
               onClick={onCartClick}
-              className="relative p-2.5 rounded-full hover:bg-beige-dark/50 text-navy-dark hover:text-gold transition-all duration-300 cursor-pointer flex items-center justify-center border border-transparent hover:border-beige-dark"
+              className="relative p-2.5 rounded-full hover:bg-beige-dark/50 text-ink hover:text-gold transition-all duration-300 cursor-pointer flex items-center justify-center border border-transparent hover:border-beige-dark"
               aria-label="Keranjang Belanja"
             >
               <ShoppingBag className="w-5 h-5" />
@@ -101,7 +101,7 @@ export default function Navbar({ cart, onCartClick, onNavigate, activeSection }:
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden p-2 rounded-md text-navy-dark hover:text-gold transition-colors cursor-pointer"
+              className="md:hidden p-2 rounded-md text-ink hover:text-gold transition-colors cursor-pointer"
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -120,7 +120,7 @@ export default function Navbar({ cart, onCartClick, onNavigate, activeSection }:
                 className={`w-full text-left py-3 px-4 rounded-lg font-sans text-sm tracking-wider uppercase transition-colors ${
                   activeSection === link.id
                     ? 'bg-beige-dark text-gold font-medium border-l-4 border-gold'
-                    : 'text-navy-dark hover:bg-beige-dark/40 hover:text-gold'
+                    : 'text-ink hover:bg-beige-dark/40 hover:text-gold'
                 }`}
               >
                 {link.label}

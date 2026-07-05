@@ -72,38 +72,38 @@ _Mohon tunggu konfirmasi admin kami untuk ketersediaan stok & perhitungan ongkos
   };
 
   return (
-    <section id="checkout" className="py-24 bg-white relative">
+    <section id="checkout" className="py-24 bg-beige-light relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Title */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-xs font-sans tracking-[0.25em] text-gold uppercase font-semibold">
+          <span className="text-xs font-mono tracking-[0.25em] text-gold uppercase font-semibold">
             SECURE & EASY CHECKOUT
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-navy-dark mt-2 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-ink mt-2 tracking-tight">
             Pemesanan & Detail Alamat
           </h2>
           <div className="h-1 w-20 bg-gold mx-auto mt-4" />
-          <p className="font-sans text-sm text-navy-dark/65 mt-5 font-light">
+          <p className="font-sans text-sm text-ink/70 mt-5 font-light">
             Silakan lengkapi formulir di bawah ini. Pesanan Anda akan dikirimkan langsung ke WhatsApp kami untuk proses kilat.
           </p>
         </div>
 
         {cart.length === 0 ? (
           /* Empty state for checkout section */
-          <div className="max-w-xl mx-auto border border-beige-dark bg-beige-light/40 p-10 text-center space-y-6 shadow-sm">
-            <div className="p-5 bg-beige-dark/30 inline-block rounded-full text-gold/80">
+          <div className="max-w-xl mx-auto border border-beige-dark/40 bg-panel p-10 text-center space-y-6 rounded-none">
+            <div className="p-5 bg-beige-dark/30 inline-block rounded-none text-gold/80">
               <ShoppingBag className="w-10 h-10" />
             </div>
             <div>
-              <h3 className="font-serif text-lg font-bold text-navy-dark">Keranjang Belanja Kosong</h3>
-              <p className="font-sans text-xs text-navy-dark/65 mt-2 leading-relaxed">
+              <h3 className="font-serif text-lg font-bold text-ink">Keranjang Belanja Kosong</h3>
+              <p className="font-sans text-xs text-ink/65 mt-2 leading-relaxed">
                 Anda belum memilih produk apa pun. Silakan lihat koleksi busana premium terbaik kami terlebih dahulu untuk melakukan pemesanan.
               </p>
             </div>
             <button
               onClick={() => onNavigate('koleksi')}
-              className="px-6 py-3 bg-navy-dark hover:bg-gold text-white hover:text-navy-dark font-sans text-xs font-semibold uppercase tracking-wider transition-colors duration-300 cursor-pointer"
+              className="px-6 py-3 bg-gold hover:bg-gold-dark text-black font-mono text-xs font-semibold uppercase tracking-widest transition-colors duration-300 cursor-pointer rounded-none"
             >
               Lihat Koleksi
             </button>
@@ -112,8 +112,8 @@ _Mohon tunggu konfirmasi admin kami untuk ketersediaan stok & perhitungan ongkos
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
             
             {/* Left: Input Form */}
-            <div className="lg:col-span-7 bg-beige-light/40 border border-beige-dark/60 p-8 sm:p-10 shadow-sm">
-              <h3 className="font-serif text-xl font-bold text-navy-dark mb-6 tracking-tight border-b border-beige-dark/50 pb-4">
+            <div className="lg:col-span-7 bg-panel border border-beige-dark/40 p-8 sm:p-10 rounded-none">
+              <h3 className="font-serif text-xl font-bold text-ink mb-6 tracking-tight border-b border-beige-dark/50 pb-4">
                 Formulir Penerima
               </h3>
 
@@ -121,11 +121,11 @@ _Mohon tunggu konfirmasi admin kami untuk ketersediaan stok & perhitungan ongkos
                 
                 {/* Full Name */}
                 <div className="space-y-2">
-                  <label htmlFor="name" className="block text-xs font-sans font-semibold text-navy-dark tracking-wider uppercase">
+                  <label htmlFor="name" className="block text-xs font-mono font-semibold text-ink tracking-wider uppercase">
                     Nama Lengkap <span className="text-red-500">*</span>
                   </label>
                   <div className="relative">
-                    <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-navy-dark/40 pointer-events-none">
+                    <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-ink/40 pointer-events-none">
                       <User className="w-4 h-4" />
                     </span>
                     <input
@@ -136,18 +136,18 @@ _Mohon tunggu konfirmasi admin kami untuk ketersediaan stok & perhitungan ongkos
                       value={form.name}
                       onChange={handleChange}
                       placeholder="Masukkan nama lengkap Anda"
-                      className="block w-full pl-10 pr-4 py-3 bg-white border border-beige-dark/80 focus:border-gold focus:ring-1 focus:ring-gold text-sm font-sans text-navy-dark placeholder-navy-dark/30 outline-none transition-all"
+                      className="block w-full pl-10 pr-4 py-3 bg-beige-light border border-beige-dark focus:border-gold focus:ring-1 focus:ring-gold text-sm font-sans text-ink placeholder-ink/20 outline-none transition-all rounded-none"
                     />
                   </div>
                 </div>
 
                 {/* WhatsApp Number */}
                 <div className="space-y-2">
-                  <label htmlFor="whatsapp" className="block text-xs font-sans font-semibold text-navy-dark tracking-wider uppercase">
+                  <label htmlFor="whatsapp" className="block text-xs font-mono font-semibold text-ink tracking-wider uppercase">
                     Nomor WhatsApp <span className="text-red-500">*</span>
                   </label>
                   <div className="relative">
-                    <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-navy-dark/40 pointer-events-none">
+                    <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-ink/40 pointer-events-none">
                       <Phone className="w-4 h-4" />
                     </span>
                     <input
@@ -158,18 +158,18 @@ _Mohon tunggu konfirmasi admin kami untuk ketersediaan stok & perhitungan ongkos
                       value={form.whatsapp}
                       onChange={handleChange}
                       placeholder="Contoh: 081234567890"
-                      className="block w-full pl-10 pr-4 py-3 bg-white border border-beige-dark/80 focus:border-gold focus:ring-1 focus:ring-gold text-sm font-sans text-navy-dark placeholder-navy-dark/30 outline-none transition-all"
+                      className="block w-full pl-10 pr-4 py-3 bg-beige-light border border-beige-dark focus:border-gold focus:ring-1 focus:ring-gold text-sm font-sans text-ink placeholder-ink/20 outline-none transition-all rounded-none"
                     />
                   </div>
                 </div>
 
                 {/* Address */}
                 <div className="space-y-2">
-                  <label htmlFor="address" className="block text-xs font-sans font-semibold text-navy-dark tracking-wider uppercase">
+                  <label htmlFor="address" className="block text-xs font-mono font-semibold text-ink tracking-wider uppercase">
                     Alamat Lengkap Pengiriman <span className="text-red-500">*</span>
                   </label>
                   <div className="relative">
-                    <span className="absolute top-3.5 left-3.5 text-navy-dark/40 pointer-events-none">
+                    <span className="absolute top-3.5 left-3.5 text-ink/40 pointer-events-none">
                       <MapPin className="w-4 h-4" />
                     </span>
                     <textarea
@@ -180,14 +180,14 @@ _Mohon tunggu konfirmasi admin kami untuk ketersediaan stok & perhitungan ongkos
                       value={form.address}
                       onChange={handleChange}
                       placeholder="Tulis alamat lengkap Anda (Nama Jalan, RT/RW, Desa/Kelurahan, Kecamatan, Kabupaten/Kota, Provinsi, Kode Pos)"
-                      className="block w-full pl-10 pr-4 py-3 bg-white border border-beige-dark/80 focus:border-gold focus:ring-1 focus:ring-gold text-sm font-sans text-navy-dark placeholder-navy-dark/30 outline-none transition-all resize-none"
+                      className="block w-full pl-10 pr-4 py-3 bg-beige-light border border-beige-dark focus:border-gold focus:ring-1 focus:ring-gold text-sm font-sans text-ink placeholder-ink/20 outline-none transition-all resize-none rounded-none"
                     />
                   </div>
                 </div>
 
                 {/* Notes */}
                 <div className="space-y-2">
-                  <label htmlFor="notes" className="block text-xs font-sans font-semibold text-navy-dark/65 tracking-wider uppercase">
+                  <label htmlFor="notes" className="block text-xs font-mono font-semibold text-ink/75 tracking-wider uppercase">
                     Catatan Tambahan (Opsional)
                   </label>
                   <textarea
@@ -197,7 +197,7 @@ _Mohon tunggu konfirmasi admin kami untuk ketersediaan stok & perhitungan ongkos
                     value={form.notes}
                     onChange={handleChange}
                     placeholder="Contoh: Ukuran L, warna navy cadangan hitam, kirim jam kerja, dll."
-                    className="block w-full px-4 py-3 bg-white border border-beige-dark/80 focus:border-gold focus:ring-1 focus:ring-gold text-sm font-sans text-navy-dark placeholder-navy-dark/30 outline-none transition-all resize-none"
+                    className="block w-full px-4 py-3 bg-beige-light border border-beige-dark focus:border-gold focus:ring-1 focus:ring-gold text-sm font-sans text-ink placeholder-ink/20 outline-none transition-all resize-none rounded-none"
                   />
                 </div>
 
@@ -205,7 +205,7 @@ _Mohon tunggu konfirmasi admin kami untuk ketersediaan stok & perhitungan ongkos
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-4 px-6 bg-[#25D366] hover:bg-[#20ba56] text-white font-sans font-bold text-sm uppercase tracking-wider shadow-lg hover:shadow-emerald-500/20 transition-all duration-300 flex items-center justify-center space-x-3 cursor-pointer disabled:opacity-50"
+                  className="w-full py-4 px-6 bg-[#25D366] hover:bg-[#20ba56] text-white font-mono text-xs uppercase tracking-widest font-semibold shadow-lg hover:shadow-emerald-500/20 transition-all duration-300 flex items-center justify-center space-x-3 cursor-pointer disabled:opacity-50 rounded-none"
                 >
                   <Send className="w-4 h-4" />
                   <span>Kirim Pesanan via WhatsApp</span>
@@ -214,8 +214,8 @@ _Mohon tunggu konfirmasi admin kami untuk ketersediaan stok & perhitungan ongkos
             </div>
 
             {/* Right: Order Summary Sidebar */}
-            <div className="lg:col-span-5 bg-beige-light border border-beige-dark p-6 sm:p-8">
-              <h3 className="font-serif text-lg font-bold text-navy-dark mb-6 tracking-tight border-b border-beige-dark/50 pb-4">
+            <div className="lg:col-span-5 bg-panel border border-beige-dark/40 p-6 sm:p-8 rounded-none">
+              <h3 className="font-serif text-lg font-bold text-ink mb-6 tracking-tight border-b border-beige-dark/50 pb-4">
                 Ringkasan Belanja
               </h3>
 
@@ -232,14 +232,14 @@ _Mohon tunggu konfirmasi admin kami untuk ketersediaan stok & perhitungan ongkos
                       />
                     </div>
                     <div className="flex-grow">
-                      <h4 className="font-serif font-bold text-navy-dark line-clamp-1">
+                      <h4 className="font-serif font-bold text-ink line-clamp-1 font-medium">
                         {item.product.name}
                       </h4>
-                      <p className="font-sans text-navy-dark/50 mt-0.5">
+                      <p className="font-mono text-[11px] text-ink/50 mt-0.5">
                         {item.quantity} x {formatRupiah(item.product.price)}
                       </p>
                     </div>
-                    <span className="font-sans font-semibold text-navy-dark/80 flex-shrink-0">
+                    <span className="font-mono text-xs text-ink/80 flex-shrink-0">
                       {formatRupiah(item.product.price * item.quantity)}
                     </span>
                   </div>
@@ -247,30 +247,30 @@ _Mohon tunggu konfirmasi admin kami untuk ketersediaan stok & perhitungan ongkos
               </div>
 
               {/* Summary Calculations */}
-              <div className="border-t border-beige-dark/60 pt-4 space-y-3">
-                <div className="flex justify-between text-xs text-navy-dark/60 font-sans">
+              <div className="border-t border-beige-dark/40 pt-4 space-y-3">
+                <div className="flex justify-between text-xs text-ink/60 font-mono">
                   <span>Subtotal Produk</span>
                   <span>{formatRupiah(totalPayment)}</span>
                 </div>
-                <div className="flex justify-between text-xs text-navy-dark/60 font-sans">
+                <div className="flex justify-between text-xs text-ink/60 font-mono">
                   <span>Ongkos Kirim</span>
                   <span className="italic text-gold font-medium">Dihitung otomatis via admin</span>
                 </div>
                 
                 {/* Bold Total */}
-                <div className="flex justify-between items-center border-t border-beige-dark/60 pt-4 font-sans">
-                  <span className="text-xs font-semibold text-navy-dark uppercase tracking-wider">Total Estimasi</span>
+                <div className="flex justify-between items-center border-t border-beige-dark/40 pt-4 font-mono">
+                  <span className="text-xs font-semibold text-ink uppercase tracking-wider">Total Estimasi</span>
                   <span className="text-lg font-bold text-gold">{formatRupiah(totalPayment)}</span>
                 </div>
               </div>
 
               {/* Mini trust points */}
-              <div className="mt-8 bg-white/50 border border-beige-dark/40 p-4 space-y-2.5">
-                <div className="flex items-center space-x-2 text-[11px] text-navy-dark/70 font-sans">
+              <div className="mt-8 bg-beige-light border border-beige-dark/40 p-4 space-y-2.5 rounded-none">
+                <div className="flex items-center space-x-2 text-[11px] text-ink/75 font-sans">
                   <span className="text-gold">✔</span>
                   <span>Stok Premium Terbatas</span>
                 </div>
-                <div className="flex items-center space-x-2 text-[11px] text-navy-dark/70 font-sans">
+                <div className="flex items-center space-x-2 text-[11px] text-ink/75 font-sans">
                   <span className="text-gold">✔</span>
                   <span>Admin Fast Response 08.00 - 21.00</span>
                 </div>
