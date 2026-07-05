@@ -7,7 +7,7 @@ export const PRODUCTS: Product[] = [
     price: 499000,
     description: 'Jubah pria dengan desain modern minimalis. Bahan adem premium, sangat nyaman digunakan untuk ibadah maupun aktivitas formal.',
     subDescription: 'Kerah tegak kokoh • Kancing emas eksklusif • Saku samping tersembunyi',
-    image: 'src/assets/images/jubah_noah_premium_1783237498720.jpg',
+    image: 'images/jubah_noah_premium_1783237498720.jpg',
     category: 'Pria'
   },
   {
@@ -16,7 +16,7 @@ export const PRODUCTS: Product[] = [
     price: 449000,
     description: 'Gamis slim-fit modern dengan cutting yang rapi dan elegan. Sangat maskulin dan memberikan kesan berwibawa.',
     subDescription: 'Bahan katun toyobo silk • Kerah mandarin • Detail manset kancing',
-    image: 'src/assets/images/gamis_albbi_premium_1783237527679.jpg',
+    image: 'images/gamis_albbi_premium_1783237527679.jpg',
     category: 'Pria'
   },
   {
@@ -25,7 +25,7 @@ export const PRODUCTS: Product[] = [
     price: 589000,
     description: 'Abaya premium dengan bordir emas mewah khas timur tengah. Desain anggun, flowy, dan jatuh dengan cantik saat dikenakan.',
     subDescription: 'Bahan jetblack murni • Bordir benang emas asli • Lengan lebar elegan',
-    image: 'src/assets/images/abaya_agela_premium_1783237510426.jpg',
+    image: 'images/abaya_agela_premium_1783237510426.jpg',
     category: 'Wanita'
   },
   {
@@ -34,7 +34,7 @@ export const PRODUCTS: Product[] = [
     price: 479000,
     description: 'Gamis bermotif emboss geometris halus yang mewah. Terbuat dari serat kain premium pilihan yang sangat sejuk di kulit.',
     subDescription: 'Tekstur jacquard emboss • Anti kusut • Kancing mutiara eksklusif',
-    image: 'src/assets/images/gamis_yusha_emboss_1783237549047.jpg',
+    image: 'images/gamis_yusha_emboss_1783237549047.jpg',
     category: 'Pria'
   },
   {
@@ -43,7 +43,7 @@ export const PRODUCTS: Product[] = [
     price: 649000,
     description: 'Abaya bergaya Dubai dengan detail payet perak handmade pada bagian lengan dan kerah. Memberikan kesan berkelas dan anggun.',
     subDescription: 'Bahan silk premium • Payet jahit tangan • Dilengkapi sabuk serut dalam',
-    image: 'src/assets/images/abaya_dubai_syari_1783237487008.jpg',
+    image: 'images/abaya_dubai_syari_1783237487008.jpg',
     category: 'Wanita'
   },
   {
@@ -52,7 +52,7 @@ export const PRODUCTS: Product[] = [
     price: 489000,
     description: 'Jubah pria dengan motif etnik modern di bagian dada. Memberikan sentuhan kharismatik klasik khas nusantara.',
     subDescription: 'Bahan semi-wool premium • Motif tenun halus • Saku dada aktif',
-    image: 'src/assets/images/gamis_albbi_premium_1783237527679.jpg', // Reusing Albbi but with Khidr description/styling as elegant backup
+    image: 'images/gamis_albbi_premium_1783237527679.jpg', // Reusing Albbi but with Khidr description/styling as elegant backup
     category: 'Pria'
   }
 ];
